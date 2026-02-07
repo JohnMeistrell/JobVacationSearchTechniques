@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job Vacation Search Techniques by Johnny Meistrell</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+    .collapse.collapsed:before {  display: none; }
+    .collapse:before           {  display: none; }
+        .customClassForDropDown
+        {
+           height: 50vh;
+           overflow-y: auto;
+        }
+
+.dropdown-menu {
+  white-space: normal; /* Allow text wrapping within the menu */
+  max-width: 300px; /* Optional: Set a maximum width for the dropdown menu */
+}
+
+.dropdown-item {
+  white-space: pre-wrap; /* Wrap text and preserve white space */
+}
+    </style>
+
+</head>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+<! ### WEB PAGE ###                                                                                                                 -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<body style="background-color:#a56ca7">
+
+<h1 class="text-center">Job Vacation Search Techniques</h1>
+<h3 class="text-center">by Johnny Meistrell</h3>
+
+<div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+<div class="cc" >
+
+   <!------------------------------------------------------------------------------------------------------- -->
+   <! ### BUTTONS -->
+   <!------------------------------------------------------------------------------------------------------- -->
+
+   <div class="card card-body" style="background-color:#feeb10; padding:5px;">
+   <div class="dropdown" >
+
+       <button onclick="startPlay1()">Play Part1</button>
+       <audio id="idPlay1" controls source " src=".\assets\Part1.mp3"></audio>
+       <label id="idPlayName1" for="html" style="font-size: x-large"></label> 
+
+       <button onclick="startPlay2()">Play Part2</button>
+       <audio id="idPlay2" controls source " src=".\assets\Part2.mp3"></audio>
+       <label id="idPlayName2" for="html" style="font-size: x-large"></label>
+
+   </div></div>
+
+   <!------------------------------------------------------------------------------------------------------- -->
+   <! ### PDF -->
+   <!------------------------------------------------------------------------------------------------------- -->
+
+   <div class="card card-body" style="background-color:#feeb10; padding:5px;">
+   <div class="dropdown">
+        <iframe src=".\assets\JobVacationSearchTechniques.pdf" width="100%" height="600px" style="border: none;" title="Embedded PDF Viewer">
+           <p>Your browser does not support iframes. You can <a </a> instead.</p>
+        </iframe>
+   </div></div>
+
+   <div class="card card-body FOOT" style="background-color:#feeb10; padding:5px;">
+        <div class="text-center">                                                                    Website designed by 
+        <a target="_blank" href="mailto:J.MeistrellMA@gmail.com"                                     >John Meistrell NJ (v1.0)</a>
+       </div>
+   </div>
+
+   <!------------------------------------------------------------------------------------------------------- -->
+   <! ### -->
+   <!------------------------------------------------------------------------------------------------------- -->
+
+
+<!------------------------------------------------------------------------------------------------------- -->
+</div></div>
+
+<script type="text/javascript">
+
+/*       --------------      ------------------------------------------------------------------------------------------ */
+function startPlay1() {
+/*       --------------      ------------------------------------------------------------------------------------------ */
+
+    const audioPlayer1 = document.getElementById('idPlay1');
+    audioPlayer1.play();
+
+}
+
+/*       --------------      ------------------------------------------------------------------------------------------ */
+function startPlay2() {
+/*       --------------      ------------------------------------------------------------------------------------------ */
+
+    const audioPlayer2 = document.getElementById('idPlay2');
+    audioPlayer2.play();
+
+}
+
+
+</script>
+
+</body>
+</html>
+
