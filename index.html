@@ -46,11 +46,13 @@
    <div class="card card-body" style="background-color:#feeb10; padding:5px;">
    <div class="dropdown" >
 
-       <button onclick="startPlay1()">Play Part1</button>
+       <button onclick="startPlay(1)">Play Part1</button>
+       <button onclick="startPlay(2)">Play Part2</button>
+       <button onclick="startPlay(0)">Pause</button>
+
        <audio id="idPlay1" controls source " src=".\assets\Part1.mp3"></audio>
        <label id="idPlayName1" for="html" style="font-size: x-large"></label> 
 
-       <button onclick="startPlay2()">Play Part2</button>
        <audio id="idPlay2" controls source " src=".\assets\Part2.mp3"></audio>
        <label id="idPlayName2" for="html" style="font-size: x-large"></label>
 
@@ -84,20 +86,17 @@
 <script type="text/javascript">
 
 /*       --------------      ------------------------------------------------------------------------------------------ */
-function startPlay1() {
+function startPlay(opt) {
 /*       --------------      ------------------------------------------------------------------------------------------ */
 
     const audioPlayer1 = document.getElementById('idPlay1');
-    audioPlayer1.play();
-
-}
-
-/*       --------------      ------------------------------------------------------------------------------------------ */
-function startPlay2() {
-/*       --------------      ------------------------------------------------------------------------------------------ */
-
     const audioPlayer2 = document.getElementById('idPlay2');
-    audioPlayer2.play();
+
+                       audioPlayer1.pause(); 
+                       audioPlayer2.pause(); 
+    if ( opt === 1 ) { audioPlayer1.play(); }
+    if ( opt === 2 ) { audioPlayer2.play(); }
+
 
 }
 
